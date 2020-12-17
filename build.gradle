@@ -3,6 +3,7 @@ plugins {
     id 'scala'
     id 'org.scoverage' version '3.0.0'
     id 'org.sonarqube' version '3.0'
+    id 'jacoco'
 }
 
 group 'com.github.nullptr7'
@@ -22,7 +23,6 @@ sonarqube {
         property "sonar.login", "admin"
         property "sonar.password", "admin"
         property "sonar.host.url", "http://ubuntu:9999"
-        property "sonar.scala.scoverage.reportPath", "build/reports/scoverage/scoverage.xml"
         property "sonar.scala.coverage.reportPaths", "build/reports/scoverage/scoverage.xml"
     }
 

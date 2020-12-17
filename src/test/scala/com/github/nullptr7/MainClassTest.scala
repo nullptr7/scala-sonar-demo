@@ -12,6 +12,10 @@ class MainClassTest extends BaseTest {
     "return none when denominator is zero" in {
       MainClass.divisionOfTwoIntegers(10, 0) shouldBe None
     }
+
+    "return sum of two integers" in {
+      MainClass.getSumOfTwoNumbers(1, 2) shouldBe Option(3)
+    }
   }
 
 }

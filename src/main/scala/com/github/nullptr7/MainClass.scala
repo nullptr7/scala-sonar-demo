@@ -14,4 +14,8 @@ object MainClass {
   def unUsedMethodWillNotBePartOfCoverage(): Unit = {
     println("This is just a test method just to prove this is not included in any test")
   }
+
+  def getSumOfTwoNumbers(number1: Int, number2: Int): Option[Int] = {
+    Option(Integer.valueOf(new Calculator().sumOfTwoNumbers(number1, number2)))
+  }
 }
